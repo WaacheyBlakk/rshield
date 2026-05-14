@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R-SHIELD INDUSTRY | Secure Digital Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo.png" alt="R-SHIELD Logo">
+                <span>R-SHIELD INDUSTRY</span>
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <a href="contact.html" class="btn btn-outline">Get a Quote</a>
+                <a href="services.html" class="btn btn-primary">Get Started</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Secure Digital Solutions<br>for <span class="text-gradient">Modern Businesses</span></h1>
+                <p>Empowering your business with cutting-edge technology and cybersecurity expertise.</p>
+                <div class="hero-btns">
+                    <a href="about.html" class="btn btn-outline">Discover More</a>
+                    <a href="contact.html" class="btn btn-primary">Free Consultation</a>
+                </div>
+            </div>
+            <div class="hero-graphic">
+                <div class="globe-ring globe-ring-1">
+                    <div class="globe-ring-dot"></div>
+                </div>
+                <div class="globe"></div>
+            </div>
+        </section>
+
+        <!-- Services Grid -->
+        <section class="services">
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-code"></i></div>
+                    <h3>Web Development</h3>
+                    <p>Cutting-edge websites and applications</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-shield-virus"></i></div>
+                    <h3>Cybersecurity</h3>
+                    <p>Advanced protection for your data</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-pen-nib"></i></div>
+                    <h3>Graphic Design</h3>
+                    <p>Creative and impactful designs</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-layer-group"></i></div>
+                    <h3>UI/UX Design</h3>
+                    <p>User-focused interactive solutions</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-bullhorn"></i></div>
+                    <h3>Digital Marketing</h3>
+                    <p>Data-driven marketing and SEO strategies</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bottom Layout: Portfolio & Testimonials/Contact -->
+        <section class="bottom-section">
+            <div class="portfolio-section">
+                <div class="section-header">
+                    <h2>Our Portfolio</h2>
+                    <p>Recent Projects</p>
+                </div>
+                <div class="portfolio-grid">
+                    <div class="portfolio-card">
+                        <img src="assets/images/project-tech-agency.png" alt="Tech Agency Website" class="portfolio-img">
+                        <div class="portfolio-title">Tech Agency Website</div>
+                    </div>
+                    <div class="portfolio-card">
+                        <img src="assets/images/project-ecommerce.png" alt="E-Commerce Platform" class="portfolio-img">
+                        <div class="portfolio-title">E-Commerce Platform</div>
+                    </div>
+                    <div class="portfolio-card">
+                        <img src="assets/images/project-mobile-app.png" alt="Mobile App Design" class="portfolio-img">
+                        <div class="portfolio-title">Mobile App Design</div>
+                    </div>
+                </div>
+                <a href="portfolio.html" class="btn btn-primary btn-center" style="width: max-content;">View Portfolio</a>
+            </div>
+
+            <div class="contact-panel" style="overflow: visible;">
+                <div class="section-header">
+                    <h2>Client Testimonials</h2>
+                </div>
+
+                <!-- Message Bubble -->
+                <div class="message-bubble" id="messageBubble" onclick="toggleContactForm()">
+                    <div class="bubble-avatar">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <div class="bubble-content">
+                        <div class="bubble-name">R-SHIELD Team</div>
+                        <p>Let's work together to secure your business. Click here to send us a message!</p>
+                    </div>
+                    <div class="bubble-indicator">
+                        <i class="fa-solid fa-chevron-down" id="bubbleArrow"></i>
+                    </div>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Email: info@rshield.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+233 000 0000</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>1234 Cyber St, Tech City</span>
+                    </div>
+                </div>
+
+                <!-- Collapsible Contact Form -->
+                <div class="contact-form-wrapper" id="contactFormWrapper">
+                    <div class="contact-form" style="position: relative; right: auto; bottom: auto; width: 100%; cursor: default;">
+                        <form action="https://formspree.io/f/mrejvlvp" method="POST">
+                            <div class="form-group">
+                                <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea name="message" class="form-control" placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Footer -->
+        <section class="stats">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-num">20+</div>
+                    <div class="stat-label">Successful Projects</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-num">2+</div>
+                    <div class="stat-label">Years of Experience</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-num">100%</div>
+                    <div class="stat-label">Client Satisfaction</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-num">24/7</div>
+                    <div class="stat-label">Support Access</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+    function toggleContactForm() {
+        const wrapper = document.getElementById('contactFormWrapper');
+        const arrow = document.getElementById('bubbleArrow');
+        const bubble = document.getElementById('messageBubble');
+        wrapper.classList.toggle('open');
+        bubble.classList.toggle('active');
+        arrow.style.transform = wrapper.classList.contains('open') ? 'rotate(180deg)' : 'rotate(0deg)';
+    }
+    </script>
+</body>
+</html>

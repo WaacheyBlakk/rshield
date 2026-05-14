@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | R-SHIELD INDUSTRY</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo.png" alt="R-SHIELD Logo">
+                <span>R-SHIELD INDUSTRY</span>
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <a href="contact.html" class="btn btn-outline">Get a Quote</a>
+                <a href="services.html" class="btn btn-primary">Get Started</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="page-header header-portfolio">
+        <div class="header-particles">
+            <span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span>
+        </div>
+        <div class="container">
+            <h1>Our Portfolio</h1>
+            <p>Explore some of our recent projects showcasing our expertise in web development, design, and cybersecurity.</p>
+        </div>
+    </div>
+
+    <main class="container content-section">
+        <div class="portfolio-grid" style="grid-template-columns: repeat(2, 1fr); gap: 40px;">
+            <div class="portfolio-card">
+                <img src="assets/images/project-tech-agency.png" alt="Tech Agency Website" class="portfolio-img" style="height: 300px;">
+                <div class="portfolio-title" style="font-size: 1.2rem; padding: 20px;">
+                    Tech Agency Website
+                    <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 10px; font-weight: normal;">A sleek, dark-themed corporate website designed for a cutting-edge technology agency with advanced analytics dashboard integration.</p>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <img src="assets/images/project-ecommerce.png" alt="E-Commerce Platform" class="portfolio-img" style="height: 300px;">
+                <div class="portfolio-title" style="font-size: 1.2rem; padding: 20px;">
+                    E-Commerce Platform
+                    <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 10px; font-weight: normal;">A fully functional, highly secure, and responsive e-commerce platform built with modern web technologies to maximize conversions.</p>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <img src="assets/images/project-mobile-app.png" alt="Mobile App Design" class="portfolio-img" style="height: 300px;">
+                <div class="portfolio-title" style="font-size: 1.2rem; padding: 20px;">
+                    Mobile App Design
+                    <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 10px; font-weight: normal;">Stunning mobile application UI/UX design focusing on usability, security, and a beautiful dark-mode aesthetic.</p>
+                </div>
+            </div>
+            <div class="portfolio-card" style="display: flex; align-items: center; justify-content: center; background: rgba(0, 102, 255, 0.05); border: 1px dashed var(--accent-color);">
+                <div style="text-align: center; padding: 40px;">
+                    <i class="fa-solid fa-plus" style="font-size: 3rem; color: var(--accent-color); margin-bottom: 20px;"></i>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Your Project Here</h3>
+                    <p style="color: var(--text-muted); margin-bottom: 20px;">Let's build something amazing together.</p>
+                    <a href="contact.html" class="btn btn-primary">Start a Project</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer style="border-top: 1px solid var(--border-color); padding: 40px 0; text-align: center; margin-top: 50px;">
+        <p style="color: var(--text-muted);">© 2026 R-SHIELD INDUSTRY. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
