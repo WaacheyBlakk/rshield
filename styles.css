@@ -699,7 +699,7 @@ textarea.form-control {
 .page-header.header-services {
   background:
     linear-gradient(135deg, rgba(0, 40, 100, 0.9) 0%, rgba(5, 10, 21, 0.95) 40%, rgba(0, 80, 160, 0.7) 100%),
-    url('../assets/images/service.png');
+    url('/assets/images/service.png');
   background-size: cover;
   background-position: center;
 }
@@ -714,7 +714,7 @@ textarea.form-control {
 .page-header.header-portfolio {
   background:
     linear-gradient(135deg, rgba(10, 20, 60, 0.9) 0%, rgba(5, 10, 21, 0.95) 40%, rgba(30, 60, 150, 0.7) 100%),
-    url('../assets/images/portfolio.png');
+    url('/assets/images/portfolio.png');
   background-size: cover;
   background-position: center;
 }
@@ -729,7 +729,7 @@ textarea.form-control {
 .page-header.header-about {
   background:
     linear-gradient(135deg, rgba(20, 10, 60, 0.9) 0%, rgba(5, 10, 21, 0.95) 40%, rgba(60, 20, 120, 0.6) 100%),
-    url('../assets/images/about.png');
+    url('/assets/images/about.png');
   background-size: cover;
   background-position: center;
 }
@@ -744,7 +744,7 @@ textarea.form-control {
 .page-header.header-contact {
   background:
     linear-gradient(135deg, rgba(0, 40, 50, 0.9) 0%, rgba(5, 10, 21, 0.95) 40%, rgba(0, 100, 80, 0.6) 100%),
-    url('../assets/images/contact.png');
+    url('/assets/images/contact.png');
   background-size: cover;
   background-position: center;
 }
