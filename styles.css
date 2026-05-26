@@ -8,7 +8,7 @@
   --text-muted: #9ca3af;
   
   /* Gradients & Accents */
-  --accent-color: #6366f1; /* Cyber Indigo */
+  --accent-color: #6366f1; 
   --accent-hover: #4f46e5;
   --accent-cyan: #06b6d4;
   --gradient-primary: linear-gradient(135deg, #6366f1 0%, #06b6d4 100%);
@@ -240,7 +240,6 @@ header {
   perspective: 1000px;
 }
 
-/* Double Sci-Fi Orbital Rings Globe */
 .globe {
   width: 100%;
   height: 100%;
@@ -267,7 +266,6 @@ header {
     repeating-linear-gradient(90deg, transparent, transparent 19px, rgba(99, 102, 241, 0.08) 20px);
 }
 
-/* Inner and Outer Sci-Fi Intersecting Ring Paths */
 .globe-ring-1 {
   position: absolute;
   inset: -12%;
@@ -466,7 +464,7 @@ header {
   margin: 0 auto;
 }
 
-/* Testimonials / Contact Panel */
+/* Testimonials Panel */
 .contact-panel {
   background: var(--glass-bg);
   border: var(--glass-border);
@@ -852,7 +850,7 @@ textarea.form-control {
   color: var(--text-main);
 }
 
-/* Testimonial Box layout adjustment */
+/* Testimonial Box layout */
 .testimonial-box {
   background: rgba(255, 255, 255, 0.02);
   border-left: 3px solid var(--accent-color);
@@ -958,7 +956,7 @@ textarea.form-control {
     justify-content: center;
   }
   .hero-graphic {
-    display: none; /* Hide background graphical node to prevent small screen structural overlap */
+    display: none;
   }
   .bottom-section {
     grid-template-columns: 1fr;
