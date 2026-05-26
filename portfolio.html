@@ -14,69 +14,132 @@
                 <img src="assets/images/logo.png" alt="R-SHIELD Logo">
                 <span>R-SHIELD INDUSTRY</span>
             </a>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="portfolio.html" class="active">Portfolio</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="nav-actions">
-                <a href="contact.html" class="btn btn-outline">Get a Quote</a>
-                <a href="services.html" class="btn btn-primary">Get Started</a>
+            
+            <div class="nav-menu-wrapper" id="navMenuWrapper">
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="nav-actions">
+                    <a href="contact.html" class="btn btn-outline">Get a Quote</a>
+                    <a href="services.html" class="btn btn-primary">Get Started</a>
+                </div>
             </div>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" onclick="toggleMobileMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </div>
     </header>
 
     <div class="page-header header-portfolio">
-        <div class="header-particles">
-            <span></span><span></span><span></span><span></span>
-            <span></span><span></span><span></span><span></span>
-        </div>
         <div class="container">
             <h1>Our Portfolio</h1>
-            <p>Explore some of our recent projects showcasing our expertise in web development, design, and cybersecurity.</p>
+            <p>Explore recent web structures, cybersecurity setups, and visual layouts built by our development teams.</p>
         </div>
     </div>
 
     <main class="container content-section">
-        <div class="portfolio-grid" style="grid-template-columns: repeat(2, 1fr); gap: 40px;">
+        <div class="portfolio-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 32px;">
             <div class="portfolio-card">
-                <img src="assets/images/project-tech-agency.png" alt="Tech Agency Website" class="portfolio-img" style="height: 300px;">
-                <div class="portfolio-title" style="font-size: 1.2rem; padding: 20px;">
-                    Tech Agency Website
-                    <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 10px; font-weight: normal;">A sleek, dark-themed corporate website designed for a cutting-edge technology agency with advanced analytics dashboard integration.</p>
+                <img src="assets/images/project-tech-agency.png" alt="Tech Agency Website" class="portfolio-img" style="height: 240px;">
+                <div class="portfolio-title" style="padding: 24px; text-align: left;">
+                    <span style="font-size: 1.15rem; font-weight: 700; display: block; margin-bottom: 8px;">Tech Agency Website</span>
+                    <p style="font-size: 0.875rem; color: var(--text-muted); font-weight: normal; line-height: 1.5;">A clean web workspace built with a dark environment visual layout, featuring analytics dashboard integrations.</p>
                 </div>
             </div>
             <div class="portfolio-card">
-                <img src="assets/images/project-ecommerce.png" alt="E-Commerce Platform" class="portfolio-img" style="height: 300px;">
-                <div class="portfolio-title" style="font-size: 1.2rem; padding: 20px;">
-                    E-Commerce Platform
-                    <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 10px; font-weight: normal;">A fully functional, highly secure, and responsive e-commerce platform built with modern web technologies to maximize conversions.</p>
+                <img src="assets/images/project-ecommerce.png" alt="E-Commerce Platform" class="portfolio-img" style="height: 240px;">
+                <div class="portfolio-title" style="padding: 24px; text-align: left;">
+                    <span style="font-size: 1.15rem; font-weight: 700; display: block; margin-bottom: 8px;">E-Commerce Platform</span>
+                    <p style="font-size: 0.875rem; color: var(--text-muted); font-weight: normal; line-height: 1.5;">An interactive checkout architecture built with modern backend pipelines for fluid item management and security.</p>
                 </div>
             </div>
             <div class="portfolio-card">
-                <img src="assets/images/project-mobile-app.png" alt="Mobile App Design" class="portfolio-img" style="height: 300px;">
-                <div class="portfolio-title" style="font-size: 1.2rem; padding: 20px;">
-                    Mobile App Design
-                    <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 10px; font-weight: normal;">Stunning mobile application UI/UX design focusing on usability, security, and a beautiful dark-mode aesthetic.</p>
+                <img src="assets/images/project-mobile-app.png" alt="Mobile App Design" class="portfolio-img" style="height: 240px;">
+                <div class="portfolio-title" style="padding: 24px; text-align: left;">
+                    <span style="font-size: 1.15rem; font-weight: 700; display: block; margin-bottom: 8px;">Mobile App Design</span>
+                    <p style="font-size: 0.875rem; color: var(--text-muted); font-weight: normal; line-height: 1.5;">Modern interface prototyping focused on touch targets, clear interactive screens, and unified color scales.</p>
                 </div>
             </div>
-            <div class="portfolio-card" style="display: flex; align-items: center; justify-content: center; background: rgba(0, 102, 255, 0.05); border: 1px dashed var(--accent-color);">
-                <div style="text-align: center; padding: 40px;">
-                    <i class="fa-solid fa-plus" style="font-size: 3rem; color: var(--accent-color); margin-bottom: 20px;"></i>
-                    <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Your Project Here</h3>
-                    <p style="color: var(--text-muted); margin-bottom: 20px;">Let's build something amazing together.</p>
+            <div class="portfolio-card" style="display: flex; flex-direction: column; align-items: center; justify-content: center; background: rgba(99, 102, 241, 0.03); border: 2px dashed rgba(99, 102, 241, 0.2); border-radius: 16px; min-height: 330px;">
+                <div style="text-align: center; padding: 40px 24px;">
+                    <i class="fa-solid fa-plus" style="font-size: 2.5rem; color: var(--accent-color); margin-bottom: 16px;"></i>
+                    <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 8px;">Your Project Here</h3>
+                    <p style="color: var(--text-muted); font-size: 0.875rem; margin-bottom: 24px; max-width: 250px; margin-left: auto; margin-right: auto;">Let's plan your upcoming digital interface setup together.</p>
                     <a href="contact.html" class="btn btn-primary">Start a Project</a>
                 </div>
             </div>
         </div>
     </main>
 
-    <footer style="border-top: 1px solid var(--border-color); padding: 40px 0; text-align: center; margin-top: 50px;">
-        <p style="color: var(--text-muted);">© 2026 R-SHIELD INDUSTRY. All Rights Reserved.</p>
+    <!-- Static Floating Contact Widget -->
+    <div class="floating-contact-container" id="floatingContactContainer">
+        <!-- Floating Contact Form Wrapper -->
+        <div class="contact-form-wrapper floating-form-wrapper" id="contactFormWrapper">
+            <div class="contact-form-card">
+                <h3>Send a Message</h3>
+                <form action="https://formspree.io/f/mrejvlvp" method="POST">
+                    <div class="form-group">
+                        <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" class="form-control" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Floating Message Bubble Trigger -->
+        <div class="message-bubble floating-bubble" id="messageBubble" onclick="toggleContactForm()">
+            <div class="bubble-avatar" style="width: 36px; height: 36px; min-width: 36px; font-size: 0.95rem; margin-right: 10px;">
+                <i class="fa-solid fa-comments"></i>
+            </div>
+            <div class="bubble-content-compact">
+                <div class="bubble-title-text">Contact Us</div>
+            </div>
+            <div class="bubble-indicator" style="margin-left: 8px;">
+                <i class="fa-solid fa-chevron-up" id="bubbleArrow"></i>
+            </div>
+        </div>
+    </div>
+
+    <footer style="border-top: 1px solid var(--border-color); padding: 40px 0; text-align: center; margin-top: 80px;">
+        <p style="color: var(--text-muted); font-size: 0.85rem;">© 2026 R-SHIELD INDUSTRY. All Rights Reserved.</p>
     </footer>
+
+    <script>
+    function toggleMobileMenu() {
+        const wrapper = document.getElementById('navMenuWrapper');
+        const toggleBtn = document.getElementById('menuToggle');
+        wrapper.classList.toggle('active');
+        
+        const icon = toggleBtn.querySelector('i');
+        if (wrapper.classList.contains('active')) {
+            icon.className = 'fa-solid fa-xmark';
+        } else {
+            icon.className = 'fa-solid fa-bars';
+        }
+    }
+
+    function toggleContactForm() {
+        const wrapper = document.getElementById('contactFormWrapper');
+        const arrow = document.getElementById('bubbleArrow');
+        const bubble = document.getElementById('messageBubble');
+        wrapper.classList.toggle('open');
+        bubble.classList.toggle('active');
+        
+        arrow.style.transform = wrapper.classList.contains('open') ? 'rotate(180deg)' : 'rotate(0deg)';
+    }
+    </script>
 </body>
 </html>

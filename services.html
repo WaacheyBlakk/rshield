@@ -14,65 +14,128 @@
                 <img src="assets/images/logo.png" alt="R-SHIELD Logo">
                 <span>R-SHIELD INDUSTRY</span>
             </a>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="services.html" class="active">Services</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="nav-actions">
-                <a href="contact.html" class="btn btn-outline">Get a Quote</a>
-                <a href="services.html" class="btn btn-primary">Get Started</a>
+            
+            <div class="nav-menu-wrapper" id="navMenuWrapper">
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html" class="active">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="nav-actions">
+                    <a href="contact.html" class="btn btn-outline">Get a Quote</a>
+                    <a href="services.html" class="btn btn-primary">Get Started</a>
+                </div>
             </div>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" onclick="toggleMobileMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </div>
     </header>
 
     <div class="page-header header-services">
-        <div class="header-particles">
-            <span></span><span></span><span></span><span></span>
-            <span></span><span></span><span></span><span></span>
-        </div>
         <div class="container">
             <h1>Our Services</h1>
-            <p>Comprehensive digital and cybersecurity solutions tailored to protect and grow your modern business in the digital landscape.</p>
+            <p>Comprehensive digital and cybersecurity environments structured to protect and grow your enterprise assets.</p>
         </div>
     </div>
 
     <main class="container content-section">
-        <div class="services-grid" style="gap: 40px;">
-            <div class="service-card" style="padding: 40px 20px;">
-                <div class="service-icon" style="font-size: 3rem;"><i class="fa-solid fa-code"></i></div>
-                <h3 style="font-size: 1.5rem; margin-bottom: 15px;">Web Development</h3>
-                <p style="font-size: 1rem;">We build scalable, high-performance web applications using the latest modern frameworks. From e-commerce platforms to complex enterprise solutions, our web development services ensure your business stands out.</p>
+        <div class="services-grid" style="gap: 24px;">
+            <div class="service-card" style="padding: 32px 24px;">
+                <div class="service-icon" style="font-size: 2rem;"><i class="fa-solid fa-code"></i></div>
+                <h3 style="font-size: 1.35rem; margin-bottom: 12px;">Web Development</h3>
+                <p>We build scalable, high-performance web applications using verified framework stacks. From customized e-commerce operations to secure database setups, our solutions focus on architectural stability and responsiveness.</p>
             </div>
-            <div class="service-card" style="padding: 40px 20px;">
-                <div class="service-icon" style="font-size: 3rem;"><i class="fa-solid fa-shield-virus"></i></div>
-                <h3 style="font-size: 1.5rem; margin-bottom: 15px;">Cybersecurity</h3>
-                <p style="font-size: 1rem;">Protect your valuable digital assets with our advanced cybersecurity services. We offer penetration testing, vulnerability assessments, and robust security architectures to defend against modern threats.</p>
+            <div class="service-card" style="padding: 32px 24px;">
+                <div class="service-icon" style="font-size: 2rem;"><i class="fa-solid fa-shield-virus"></i></div>
+                <h3 style="font-size: 1.35rem; margin-bottom: 12px;">Cybersecurity</h3>
+                <p>Defend critical infrastructures with proactive vulnerability scanning and penetration audits. We establish threat monitoring, end-to-end data encryption protocols, and defense policies to counter modern digital exploits.</p>
             </div>
-            <div class="service-card" style="padding: 40px 20px;">
-                <div class="service-icon" style="font-size: 3rem;"><i class="fa-solid fa-pen-nib"></i></div>
-                <h3 style="font-size: 1.5rem; margin-bottom: 15px;">Graphic Design</h3>
-                <p style="font-size: 1rem;">Our creative team crafts visually stunning and impactful designs that communicate your brand's message effectively across all digital and print mediums.</p>
+            <div class="service-card" style="padding: 32px 24px;">
+                <div class="service-icon" style="font-size: 2rem;"><i class="fa-solid fa-pen-nib"></i></div>
+                <h3 style="font-size: 1.35rem; margin-bottom: 12px;">Graphic Design</h3>
+                <p>Establishing professional visual designs that present cohesive branding layouts across digital platforms. We provide customized graphic systems structured to clearly convey core business values.</p>
             </div>
-            <div class="service-card" style="padding: 40px 20px;">
-                <div class="service-icon" style="font-size: 3rem;"><i class="fa-solid fa-layer-group"></i></div>
-                <h3 style="font-size: 1.5rem; margin-bottom: 15px;">UI/UX Design</h3>
-                <p style="font-size: 1rem;">We create intuitive, user-centered designs that provide seamless experiences. Our UI/UX processes guarantee maximum user engagement and conversion rates.</p>
+            <div class="service-card" style="padding: 32px 24px;">
+                <div class="service-icon" style="font-size: 2rem;"><i class="fa-solid fa-layer-group"></i></div>
+                <h3 style="font-size: 1.35rem; margin-bottom: 12px;">UI/UX Design</h3>
+                <p>We structure system interfaces focusing on accessibility and intuitive navigation trees. Our prototyping phase maps clean, simple user journeys to optimize retention metrics.</p>
             </div>
-            <div class="service-card" style="padding: 40px 20px;">
-                <div class="service-icon" style="font-size: 3rem;"><i class="fa-solid fa-bullhorn"></i></div>
-                <h3 style="font-size: 1.5rem; margin-bottom: 15px;">Digital Marketing</h3>
-                <p style="font-size: 1rem;">Expand your reach and drive conversions with our data-driven digital marketing campaigns. We offer SEO, social media management, and targeted advertising solutions.</p>
+            <div class="service-card" style="padding: 32px 24px;">
+                <div class="service-icon" style="font-size: 2rem;"><i class="fa-solid fa-bullhorn"></i></div>
+                <h3 style="font-size: 1.35rem; margin-bottom: 12px;">Digital Marketing</h3>
+                <p>Connecting your solutions with target markets using ethical search optimization and campaign layouts designed around performance analytics and data validation.</p>
             </div>
         </div>
     </main>
 
-    <footer style="border-top: 1px solid var(--border-color); padding: 40px 0; text-align: center; margin-top: 50px;">
-        <p style="color: var(--text-muted);">© 2026 R-SHIELD INDUSTRY. All Rights Reserved.</p>
+    <!-- Static Floating Contact Widget -->
+    <div class="floating-contact-container" id="floatingContactContainer">
+        <!-- Floating Contact Form Wrapper -->
+        <div class="contact-form-wrapper floating-form-wrapper" id="contactFormWrapper">
+            <div class="contact-form-card">
+                <h3>Send a Message</h3>
+                <form action="https://formspree.io/f/mrejvlvp" method="POST">
+                    <div class="form-group">
+                        <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" class="form-control" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Floating Message Bubble Trigger -->
+        <div class="message-bubble floating-bubble" id="messageBubble" onclick="toggleContactForm()">
+            <div class="bubble-avatar" style="width: 36px; height: 36px; min-width: 36px; font-size: 0.95rem; margin-right: 10px;">
+                <i class="fa-solid fa-comments"></i>
+            </div>
+            <div class="bubble-content-compact">
+                <div class="bubble-title-text">Contact Us</div>
+            </div>
+            <div class="bubble-indicator" style="margin-left: 8px;">
+                <i class="fa-solid fa-chevron-up" id="bubbleArrow"></i>
+            </div>
+        </div>
+    </div>
+
+    <footer style="border-top: 1px solid var(--border-color); padding: 40px 0; text-align: center; margin-top: 80px;">
+        <p style="color: var(--text-muted); font-size: 0.85rem;">© 2026 R-SHIELD INDUSTRY. All Rights Reserved.</p>
     </footer>
+
+    <script>
+    function toggleMobileMenu() {
+        const wrapper = document.getElementById('navMenuWrapper');
+        const toggleBtn = document.getElementById('menuToggle');
+        wrapper.classList.toggle('active');
+        
+        const icon = toggleBtn.querySelector('i');
+        if (wrapper.classList.contains('active')) {
+            icon.className = 'fa-solid fa-xmark';
+        } else {
+            icon.className = 'fa-solid fa-bars';
+        }
+    }
+
+    function toggleContactForm() {
+        const wrapper = document.getElementById('contactFormWrapper');
+        const arrow = document.getElementById('bubbleArrow');
+        const bubble = document.getElementById('messageBubble');
+        wrapper.classList.toggle('open');
+        bubble.classList.toggle('active');
+        
+        arrow.style.transform = wrapper.classList.contains('open') ? 'rotate(180deg)' : 'rotate(0deg)';
+    }
+    </script>
 </body>
 </html>

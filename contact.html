@@ -14,90 +14,108 @@
                 <img src="assets/images/logo.png" alt="R-SHIELD Logo">
                 <span>R-SHIELD INDUSTRY</span>
             </a>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html" class="active">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="nav-actions">
-                <a href="contact.html" class="btn btn-outline">Get a Quote</a>
-                <a href="services.html" class="btn btn-primary">Get Started</a>
+            
+            <div class="nav-menu-wrapper" id="navMenuWrapper">
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html" class="active">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="nav-actions">
+                    <a href="contact.html" class="btn btn-outline">Get a Quote</a>
+                    <a href="services.html" class="btn btn-primary">Get Started</a>
+                </div>
             </div>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" onclick="toggleMobileMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </div>
     </header>
 
     <div class="page-header header-contact">
-        <div class="header-particles">
-            <span></span><span></span><span></span><span></span>
-            <span></span><span></span><span></span><span></span>
-        </div>
         <div class="container">
             <h1>Contact Us</h1>
-            <p>Get in touch with our team of experts. We are here to secure your business and build your digital presence.</p>
+            <p>Get in touch with our security and design specialists to discuss your project development schedules.</p>
         </div>
     </div>
 
     <main class="container content-section">
-        <div class="about-grid" style="align-items: start;">
+        <div class="about-grid">
             <div class="contact-info-section">
-                <h2 style="font-size: 2rem; margin-bottom: 20px;">Let's Talk</h2>
-                <p style="color: var(--text-muted); margin-bottom: 30px;">Whether you need a new website, a security audit, or cloud migration, our team is ready to help you achieve your goals.</p>
+                <h2 style="font-size: 2rem; font-weight: 800; margin-bottom: 16px; letter-spacing: -0.02em;">Let's Talk</h2>
+                <p style="color: var(--text-muted); margin-bottom: 32px; font-size: 0.95rem;">Whether initiating a system security review or building modern web applications, we are prepared to establish secure solutions tailored to your operational goals.</p>
                 
-                <div class="contact-info" style="background: var(--glass-bg); padding: 30px; border-radius: 12px; border: var(--glass-border);">
-                    <div class="contact-item" style="font-size: 1.1rem; margin-bottom: 25px;">
-                        <i class="fa-solid fa-envelope" style="font-size: 1.5rem; width: 30px;"></i>
-                        <span>Email: <a href="mailto:info@rshield.com">info@rshield.com</a></span>
+                <div class="contact-info" style="background: var(--glass-bg); padding: 32px; border-radius: 16px; border: var(--glass-border);">
+                    <div class="contact-item" style="font-size: 0.95rem; margin-bottom: 24px;">
+                        <i class="fa-solid fa-envelope" style="font-size: 1.25rem; width: 30px;"></i>
+                        <span>Email: <a href="mailto:info@rshield.com" style="color: var(--accent-cyan);">info@rshield.com</a></span>
                     </div>
-                    <div class="contact-item" style="font-size: 1.1rem; margin-bottom: 25px;">
-                        <i class="fa-solid fa-phone" style="font-size: 1.5rem; width: 30px;"></i>
+                    <div class="contact-item" style="font-size: 0.95rem; margin-bottom: 24px;">
+                        <i class="fa-solid fa-phone" style="font-size: 1.25rem; width: 30px;"></i>
                         <span>Phone: +233 000 0000</span>
                     </div>
-                    <div class="contact-item" style="font-size: 1.1rem; margin-bottom: 25px;">
-                        <i class="fa-solid fa-location-dot" style="font-size: 1.5rem; width: 30px;"></i>
+                    <div class="contact-item" style="font-size: 0.95rem; margin-bottom: 24px;">
+                        <i class="fa-solid fa-location-dot" style="font-size: 1.25rem; width: 30px;"></i>
                         <span>Address: 1234 Cyber St, Tech City</span>
                     </div>
-                    <div class="contact-item" style="font-size: 1.1rem;">
-                        <i class="fa-solid fa-clock" style="font-size: 1.5rem; width: 30px;"></i>
+                    <div class="contact-item" style="font-size: 0.95rem;">
+                        <i class="fa-solid fa-clock" style="font-size: 1.25rem; width: 30px;"></i>
                         <span>Hours: 24/7 Support Access</span>
                     </div>
                 </div>
             </div>
 
-            <div class="contact-form" style="position: relative; right: auto; bottom: auto; width: 100%; box-shadow: none;">
-                <h3 style="font-size: 1.5rem; margin-bottom: 20px;">Send a Message</h3>
+            <div class="contact-panel" style="background: var(--glass-bg); border: var(--glass-border); border-radius: 16px; padding: 32px;">
+                <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 24px;">Send a Message</h3>
                 <form action="https://formspree.io/f/mrejvlvp" method="POST">
                     <div class="form-group">
-                        <label style="display: block; margin-bottom: 8px; color: var(--text-muted); font-size: 0.9rem;">Full Name</label>
+                        <label style="display: block; margin-bottom: 8px; color: var(--text-muted); font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em;">Full Name</label>
                         <input type="text" name="name" class="form-control" placeholder="John Doe" required>
                     </div>
                     <div class="form-group">
-                        <label style="display: block; margin-bottom: 8px; color: var(--text-muted); font-size: 0.9rem;">Email Address</label>
+                        <label style="display: block; margin-bottom: 8px; color: var(--text-muted); font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em;">Email Address</label>
                         <input type="email" name="email" class="form-control" placeholder="john@example.com" required>
                     </div>
                     <div class="form-group">
-                        <label style="display: block; margin-bottom: 8px; color: var(--text-muted); font-size: 0.9rem;">Subject</label>
-                        <select name="subject" class="form-control" style="color: white;">
+                        <label style="display: block; margin-bottom: 8px; color: var(--text-muted); font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em;">Subject</label>
+                        <select name="subject" class="form-control">
                             <option value="general">General Inquiry</option>
                             <option value="quote">Request a Quote</option>
                             <option value="support">Technical Support</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label style="display: block; margin-bottom: 8px; color: var(--text-muted); font-size: 0.9rem;">Message</label>
-                        <textarea name="message" class="form-control" placeholder="How can we help you?" style="min-height: 150px;" required></textarea>
+                        <label style="display: block; margin-bottom: 8px; color: var(--text-muted); font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em;">Message</label>
+                        <textarea name="message" class="form-control" placeholder="How can we help you?" style="min-height: 120px;" required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary" style="font-size: 1.1rem; padding: 15px;">Send Message</button>
+                    <button type="submit" class="btn btn-primary" style="width: 100%; padding: 14px; font-weight: 700;">Send Message</button>
                 </form>
             </div>
         </div>
     </main>
 
-    <footer style="border-top: 1px solid var(--border-color); padding: 40px 0; text-align: center; margin-top: 50px;">
-        <p style="color: var(--text-muted);">© 2026 R-SHIELD INDUSTRY. All Rights Reserved.</p>
+    <footer style="border-top: 1px solid var(--border-color); padding: 40px 0; text-align: center; margin-top: 80px;">
+        <p style="color: var(--text-muted); font-size: 0.85rem;">© 2026 R-SHIELD INDUSTRY. All Rights Reserved.</p>
     </footer>
+
+    <script>
+    function toggleMobileMenu() {
+        const wrapper = document.getElementById('navMenuWrapper');
+        const toggleBtn = document.getElementById('menuToggle');
+        wrapper.classList.toggle('active');
+        
+        const icon = toggleBtn.querySelector('i');
+        if (wrapper.classList.contains('active')) {
+            icon.className = 'fa-solid fa-xmark';
+        } else {
+            icon.className = 'fa-solid fa-bars';
+        }
+    }
+    </script>
 </body>
 </html>
