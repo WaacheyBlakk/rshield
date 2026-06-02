@@ -6,6 +6,19 @@
     <title>About Us | R-SHIELD INDUSTRY</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .team-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .team-card {
+            flex: 0 1 250px; 
+            box-sizing: border-box;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -48,7 +61,7 @@
         <div class="about-grid">
             <div class="about-text">
                 <h2>Our Mission</h2>
-                <p>At R-SHIELD INDUSTRY, we construct responsive web ecosystems designed to secure assets and connect businesses with target metrics. We aim to deploy web environments that integrate defense measures with modern usability layouts.</p>
+                <p>At R-SHIELD INDUSTRY, we construct responsive web ecosystems designed to secure assets and connect businesses with target audiences. We aim to deploy web environments that integrate defense measures with modern usability layouts.</p>
                 <p>Guided by engineering integrity and detailed execution, we have supported clients in establishing secure platforms, maintaining high levels of satisfaction across our digital initiatives.</p>
                 <div style="margin-top: 32px;">
                     <a href="contact.html" class="btn btn-primary">Work With Us</a>
@@ -74,27 +87,35 @@
             
             <div class="team-grid">
                 <div class="team-card">
-                    <img src="assets/images/profile.webp" alt="Founder">
-                    <h3>John Doe</h3>
+                    <img src="assets/images/founder.jpg" alt="Founder">
+                    <h3>Abdul-Rahim Zakaria</h3>
                     <p>CEO & Founder</p>
                 </div>
                 <div class="team-card">
-                    <img src="assets/images/profile.webp" alt="Member">
-                    <h3>John Doe</h3>
+                    <img src="assets/images/leadDev.JPG" alt="leadDev">
+                    <h3>Abdul-Rahaman Salifu</h3>
                     <p>Lead Developer</p>
                 </div>
                 <div class="team-card">
-                    <img src="assets/images/profile.webp" alt="Member">
-                    <h3>John Doe</h3>
-                    <p>Head of Cybersecurity</p>
+                    <img src="assets/images/marketingLead.jpg" alt="marketingLead">
+                    <h3>Zainab Nabia</h3>
+                    <p>Marketing Lead</p>
+                </div>
+                <div class="team-card">
+                    <img src="assets/images/cyberLead.jpg" alt="cyberLead">
+                    <h3>Effah K. Joseph</h3>
+                    <p>Cybersecurity Lead</p>
+                </div>
+                <div class="team-card">
+                    <img src="assets/images/designLead.jpg" alt="designLead">
+                    <h3>Peter B. Ninkpel</h3>
+                    <p>Lead Designer</p>
                 </div>
             </div>
         </div>
     </main>
 
-    <!-- Static Floating Contact Widget -->
     <div class="floating-contact-container" id="floatingContactContainer">
-        <!-- Floating Contact Form Wrapper -->
         <div class="contact-form-wrapper floating-form-wrapper" id="contactFormWrapper">
             <div class="contact-form-card">
                 <h3>Send a Message</h3>
@@ -113,7 +134,6 @@
             </div>
         </div>
 
-        <!-- Floating Message Bubble Trigger -->
         <div class="message-bubble floating-bubble" id="messageBubble" onclick="toggleContactForm()">
             <div class="bubble-avatar" style="width: 36px; height: 36px; min-width: 36px; font-size: 0.95rem; margin-right: 10px;">
                 <i class="fa-solid fa-comments"></i>

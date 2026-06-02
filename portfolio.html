@@ -6,6 +6,22 @@
     <title>Portfolio | R-SHIELD INDUSTRY</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .portfolio-grid {
+            display: flex !important;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .portfolio-card {
+            flex: 1 1 280px;
+            max-width: 380px;
+            box-sizing: border-box;
+            text-align: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -45,26 +61,26 @@
     </div>
 
     <main class="container content-section">
-        <div class="portfolio-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 32px;">
+        <div class="portfolio-grid" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 32px;">
             <div class="portfolio-card">
                 <img src="assets/images/project-tech-agency.png" alt="Tech Agency Website" class="portfolio-img" style="height: 240px;">
                 <div class="portfolio-title" style="padding: 24px; text-align: left;">
-                    <span style="font-size: 1.15rem; font-weight: 700; display: block; margin-bottom: 8px;">Tech Agency Website</span>
-                    <p style="font-size: 0.875rem; color: var(--text-muted); font-weight: normal; line-height: 1.5;">A clean web workspace built with a dark environment visual layout, featuring analytics dashboard integrations.</p>
+                    <span style="font-size: 1.15rem; font-weight: 700; display: block; margin-bottom: 8px; text-align: center;">Tech Agency Website</span>
+                    <p style="font-size: 0.875rem; color: var(--text-muted); font-weight: normal; line-height: 1.5; text-align: center;">A clean web workspace built with a dark environment visual layout, featuring analytics dashboard integrations.</p>
                 </div>
             </div>
             <div class="portfolio-card">
                 <img src="assets/images/project-ecommerce.png" alt="E-Commerce Platform" class="portfolio-img" style="height: 240px;">
                 <div class="portfolio-title" style="padding: 24px; text-align: left;">
-                    <span style="font-size: 1.15rem; font-weight: 700; display: block; margin-bottom: 8px;">E-Commerce Platform</span>
-                    <p style="font-size: 0.875rem; color: var(--text-muted); font-weight: normal; line-height: 1.5;">An interactive checkout architecture built with modern backend pipelines for fluid item management and security.</p>
+                    <span style="font-size: 1.15rem; font-weight: 700; display: block; margin-bottom: 8px; text-align: center;">E-Commerce Platform</span>
+                    <p style="font-size: 0.875rem; color: var(--text-muted); font-weight: normal; line-height: 1.5; text-align: center;">An interactive checkout architecture built with modern backend pipelines for fluid item management and security.</p>
                 </div>
             </div>
             <div class="portfolio-card">
                 <img src="assets/images/project-mobile-app.png" alt="Mobile App Design" class="portfolio-img" style="height: 240px;">
                 <div class="portfolio-title" style="padding: 24px; text-align: left;">
-                    <span style="font-size: 1.15rem; font-weight: 700; display: block; margin-bottom: 8px;">Mobile App Design</span>
-                    <p style="font-size: 0.875rem; color: var(--text-muted); font-weight: normal; line-height: 1.5;">Modern interface prototyping focused on touch targets, clear interactive screens, and unified color scales.</p>
+                    <span style="font-size: 1.15rem; font-weight: 700; display: block; margin-bottom: 8px; text-align: center;">Mobile App Design</span>
+                    <p style="font-size: 0.875rem; color: var(--text-muted); font-weight: normal; line-height: 1.5; text-align: center;">Modern interface prototyping focused on touch targets, clear interactive screens, and unified color scales.</p>
                 </div>
             </div>
             <div class="portfolio-card" style="display: flex; flex-direction: column; align-items: center; justify-content: center; background: rgba(99, 102, 241, 0.03); border: 2px dashed rgba(99, 102, 241, 0.2); border-radius: 16px; min-height: 330px;">
@@ -78,9 +94,7 @@
         </div>
     </main>
 
-    <!-- Static Floating Contact Widget -->
     <div class="floating-contact-container" id="floatingContactContainer">
-        <!-- Floating Contact Form Wrapper -->
         <div class="contact-form-wrapper floating-form-wrapper" id="contactFormWrapper">
             <div class="contact-form-card">
                 <h3>Send a Message</h3>
@@ -99,7 +113,6 @@
             </div>
         </div>
 
-        <!-- Floating Message Bubble Trigger -->
         <div class="message-bubble floating-bubble" id="messageBubble" onclick="toggleContactForm()">
             <div class="bubble-avatar" style="width: 36px; height: 36px; min-width: 36px; font-size: 0.95rem; margin-right: 10px;">
                 <i class="fa-solid fa-comments"></i>

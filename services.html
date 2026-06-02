@@ -6,6 +6,22 @@
     <title>Services | R-SHIELD INDUSTRY</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .services-grid {
+            display: flex !important;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .service-card {
+            flex: 1 1 300px;
+            max-width: 380px;
+            box-sizing: border-box;
+            text-align: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -45,7 +61,7 @@
     </div>
 
     <main class="container content-section">
-        <div class="services-grid" style="gap: 24px;">
+        <div class="services-grid" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 24px;">
             <div class="service-card" style="padding: 32px 24px;">
                 <div class="service-icon" style="font-size: 2rem;"><i class="fa-solid fa-code"></i></div>
                 <h3 style="font-size: 1.35rem; margin-bottom: 12px;">Web Development</h3>
@@ -74,9 +90,7 @@
         </div>
     </main>
 
-    <!-- Static Floating Contact Widget -->
     <div class="floating-contact-container" id="floatingContactContainer">
-        <!-- Floating Contact Form Wrapper -->
         <div class="contact-form-wrapper floating-form-wrapper" id="contactFormWrapper">
             <div class="contact-form-card">
                 <h3>Send a Message</h3>
@@ -95,7 +109,6 @@
             </div>
         </div>
 
-        <!-- Floating Message Bubble Trigger -->
         <div class="message-bubble floating-bubble" id="messageBubble" onclick="toggleContactForm()">
             <div class="bubble-avatar" style="width: 36px; height: 36px; min-width: 36px; font-size: 0.95rem; margin-right: 10px;">
                 <i class="fa-solid fa-comments"></i>
